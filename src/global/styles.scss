@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800;900&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+  line-height: 19px;
+  margin: 0;
+}
+
+header {
+  h1 {
+    font-weight: bolder;
+  }
+}
+
+.card-header {
+  display: flex;
+}
+
+.title.title-md {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+ion-alert.large {
+  --width: 75%;
+  --max-width: 75%;
+}
+
+form ion-item {
+  --inner-padding-end: 0px;
+}
+
+ion-button {
+  ion-spinner {
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+  }
+}
+
+ion-menu ion-select {
+  max-width: unset;
+  width: 100%;
+  --padding-start: 0;
+}
+
+ion-menu-button[slot='fixed'] {
+  top: 4px;
+  right: 4px;
+}
+
+.input-hint {
+  font-size: 13px !important;
+}

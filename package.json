@@ -4,16 +4,17 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "stencil build",
+    "start": "stencil build --dev --watch --serve --docs",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "@stencil/core": "^2.3.0",
+    "@stencil/sass": "^1.4.0",
     "@xstate/inspect": "0.0.11",
     "xstate": "4.11.0"
-  },
-  "devDependencies": {
-    "@babel/core": "7.2.0",
-    "parcel-bundler": "^1.6.1"
   },
   "keywords": []
 }

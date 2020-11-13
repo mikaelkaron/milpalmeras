@@ -1,2 +1,3 @@
 # milpalmeras
-Created with CodeSandbox
+
+Milpalmeras app prototype
