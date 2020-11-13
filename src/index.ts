@@ -28,7 +28,13 @@ const machine = Machine<ToggleContext>({
       initial: "map",
       states: {
         map: {},
-        locations: {},
+        locations: {
+          initial: "list",
+          states: {
+            list: {},
+            location: {}
+          }
+        },
         services: {
           initial: "list",
           states: {
@@ -59,6 +65,7 @@ const machine = Machine<ToggleContext>({
     RENTALS: "rentals",
     PROPERTIES: "properties",
     LOCATIONS: "guide.locations",
+    LOCATION: "guide.locations.location",
     SERVICES: "guide.services",
     SERVICE: "guide.services.service",
     ACTIVITIES: "guide.activities",
